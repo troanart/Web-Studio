@@ -1,0 +1,43 @@
+body {
+    color: var(--main-text-color);
+    font-family: var(--main-font-family);
+
+}
+
+.logo {
+    color: var(--accent-color);
+    font-family: var(--logo-font-family);
+    font-size: 26px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.78px;
+
+    &__black {
+        color: #000;
+    }
+    
+    &__white {
+        color: var(--primary-white-color);
+    
+    }
+}
+
+
+
+.secondary-title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.08px;
+}
+
+.third-title {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+}
+
+
