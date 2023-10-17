@@ -1,54 +1,92 @@
 .team {
-    padding-top: 94px;
-    padding-bottom: 94px;
-    background-color: #F5F4FA;
+  padding: 60px 0 60px 0;
+  background-color: #f5f4fa;
 
-    &__title {
-        margin-bottom: 50px;
+
+  &__title {
+    // margin-bottom: 50px; desctop
+    margin-bottom: 30px;
+
+    @media screen and (min-width:1200px) {
+      margin-bottom: 50px;
+      
+    }
+  }
+
+  &__item {
+    
+
+    margin-bottom: 30px;
+    width: 100%;
+    box-shadow: var(--team-card-shadow);
+    border-radius: 4px;
+    overflow: hidden;
+
+    &:last-child {
+      margin-bottom: 0;
     }
 
-    &__item {
-        flex-basis: calc(100% / 4 - 30px);
-        margin-left: 30px;
-        width: 270px;
-        box-shadow: var(--team-card-shadow);
-        border-radius: 4px;
-        overflow: hidden;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0;
+      flex-basis: calc(100% / 2 - 30px);
     }
+
+    @media screen and (min-width:1200px) {
+
+      flex-basis: calc(100% / 4 - 30px);
+    // margin-left: 30px;
+      
+    }
+  }
+
+  @media screen and (min-width:1200px) {
+    padding: 94px 0;
+  }
 }
 
 .team-list {
-    padding: 0;
-    margin: 0;
-    list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  list-style: none;
+  // display: flex;
+  // flex-wrap: wrap;
+  // margin-left: -30px;
+  // justify-content: center;
+  @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -30px;
     justify-content: center;
+    gap: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: center;
+  }
 }
 
 .about {
-    background-color: var(--primary-white-color);
-    padding-bottom: 30px;
-    padding-top: 30px;
+  background-color: var(--primary-white-color);
+  padding-bottom: 30px;
+  padding-top: 30px;
 
-    &__name {
-        text-align: center;
-        font-size: 16px;
-        font-weight: 500;
-        line-height: normal;
-        letter-spacing: 0.48px;
-    }
+  &__name {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.48px;
+  }
 
-    &__position {
-        color: var(--primary-text-color);
-        text-align: center;
-        font-size: 16px;
-        line-height: normal;
-        letter-spacing: 0.48px;
-        margin-top: 10px;
-        margin-bottom: 16px;
-    }
+  &__position {
+    color: var(--primary-text-color);
+    text-align: center;
+    font-size: 16px;
+    line-height: normal;
+    letter-spacing: 0.48px;
+    margin-top: 10px;
+    margin-bottom: 16px;
+  }
 }
-
-

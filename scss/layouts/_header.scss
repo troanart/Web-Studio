@@ -1,21 +1,35 @@
 .header {
     padding: 0;
     border-bottom: 1px solid #ECECEC;
+    
+   
 }
 
 .navigatoin {
     display: flex;
     align-items: center;
+   
 }
 
 .nav {
     display: flex;
     align-items: center;
+
+   
 }
 
 .nav-list {
+    display: none;
     margin-left: 94px;
-    display: flex;
+    @media screen and (min-width:768px) {
+        display: flex;
+        margin-left: 0;
+    }
+
+    @media screen and (min-width:1200px) {
+        margin-left: 0;
+    }
+    
 }
 
 .nav__item {
@@ -66,11 +80,25 @@
 }
 
 .contact-list {
-    display: flex;
+    display: none;
     margin-left: auto;
-    gap: 40px;
+
+    
+    @media screen and (min-width:768px) {
+        display: flex;
+        flex-direction: column;  
+    }
+
+    @media screen and (min-width:1200px) {
+        display: flex;
+        flex-direction: row;
+        
+        
+    }
 
 }
+
+
 
 .contact {
     color: var(--primary-text-color);
@@ -78,14 +106,24 @@
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.28px;
-    display: flex;
-    align-items: center;
+    
+    
 
     transition: color var(--primary-translate);
 
-    &__tel {
-            align-items: center;
+    &__mail {
+
+        @media screen and (min-width:768px) {
+            margin-bottom: 10px;
         }
+
+        @media screen and (min-width:1200px) {
+            margin-right: 40px;
+            margin-bottom: 0;
+        }
+        
+    }
+    
 
     &:hover,
     &:focus {
@@ -94,9 +132,36 @@
 
     &__icon {
         fill: currentColor;
-        align-items: center;
-        align-content: center;
+
+       @media screen and (min-width:768px) {
+        margin-right: 8px;
+        width: 14px;
+        height: 10px;
+       }
+
+       @media screen and (min-width:1200px) {
         margin-right: 10px;
+        width: 16px;
+        height: 12px;
+       }
     }
 }
+
+.smartphone {
+    fill: currentColor;
+
+    @media screen and (min-width:768px) {
+        width: 10px;
+        height: 14px;
+    }
+
+    @media screen and (min-width:1200px) {
+        scale: 1.1;
+    }
+}
+
+
+
+
+
 

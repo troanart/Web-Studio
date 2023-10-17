@@ -1,51 +1,135 @@
 .hero {
-    background-color: #2F303A;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)), url(../images/bg-hero.png);
-    padding-top: 200px;
-    padding-bottom: 200px;
-    background-repeat: no-repeat;
-    background-position: center;
-    max-width: 1600px;
-    margin: 0 auto;
-}
+  
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: center ;
+  max-width: 1200px;
+
+  background-image:
+      linear-gradient(rgba(47, 48, 58, 0.40),
+          rgba(47, 48, 58, 0.40)), url(../images/retina/2-mobile-img.jpg);
+  padding-top: 118px;
+  padding-bottom: 118px;
+  max-width: 480px;
+  height: 400px;
+
+  @include mq(retina) {
+      background-image:
+          linear-gradient(rgba(47, 48, 58, 0.40),
+              rgba(47, 48, 58, 0.40)), url(../images/retina/2-mobile-img@2x.jpg);
+      max-width: 1600px;
+  }
+
+
+  @include mq(mobile) {
+      background-image:
+          linear-gradient(rgba(47, 48, 58, 0.40),
+              rgba(47, 48, 58, 0.40)), url(../images/retina/2-mobile-img.jpg);
+      max-width: 767px;
+
+      @include mq(retina) {
+          background-image: linear-gradient(rgba(47, 48, 58, 0.40),
+                  rgba(47, 48, 58, 0.40)),
+              url(../images/retina/2-mobile-img@2x.jpg);
+          max-width: 767px;
+      }
+
+      padding-top: 118px;
+      padding-bottom: 118px;
+  }
+
+  @include mq(tablet) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.40),
+              rgba(47, 48, 58, 0.40)),
+          url(../images/retina/3-tablet-img.jpg);
+      max-width: 1599px;
+
+      @include mq(retina) {
+          background-image: linear-gradient(rgba(47, 48, 58, 0.40),
+                  rgba(47, 48, 58, 0.40)),
+              url(../images/retina/3-tablet-img@2x.jpg);
+          max-width: 1599px;
+      }
+  }
+
+  @include mq(desctop) {
+      background-image:
+          linear-gradient(rgba(47, 48, 58, 0.40),
+              rgba(47, 48, 58, 0.40)),
+          url(../images/retina/1-desctop-img.jpg);
+
+      background-position: center;
+      max-width: 1600px;
+      max-height: 600px;
+      height: 600px;
+      padding-top: 200px;
+      padding-bottom: 200px; ;
+     
+
+      @include mq(retina) {
+          background-image: linear-gradient(rgba(47, 48, 58, 0.40),
+                  rgba(47, 48, 58, 0.40)),
+              url(../images/retina/1-desctop-img@2x.jpg);
+          max-width: 1600px;
+          max-height: 600px;
+          padding-top: 200px;
+          padding-bottom: 200px; ;
+          
+      }
+  }
+  }
+  
+
+    
+  
+
 
 .main-tilte {
-    color: var(--primary-white-color);
-    text-align: center;
+  color: var(--primary-white-color);
+  text-align: center;
+  font-size: 26px;
+  font-weight: 900;
+  line-height: 1.61;
+  letter-spacing: 1.56px;
+  text-transform: uppercase;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 480px) {
+    width: 360px;
+  }
+
+  @media screen and (min-width:1200px) {
     font-size: 44px;
-    font-weight: 900;
-    line-height: 1.36;
-    letter-spacing: 2.64px;
-    text-transform: uppercase;
     width: 696px;
-    margin-left: auto;
-    margin-right: auto;
+  }
+
 }
 
 .main-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
 }
 
 .hero__btn {
-    color: var(--primary-white-color);
-    background-color: var(--accent-color);
-    text-align: center;
-    font-family: var(--main-font-family);
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 1.87;
-    letter-spacing: 0.96px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    padding: 10px 24px;
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  text-align: center;
+  font-family: var(--main-font-family);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.96px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 10px 24px;
 
-    &:active {
-        background-color: #188CE8;
-        padding: 10px 32px;
-    }
+  &:active {
+    background-color: #188ce8;
+    padding: 10px 32px;
+  }
 }
-

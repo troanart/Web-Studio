@@ -1,40 +1,88 @@
 .peculiarities {
-    padding-top: 94px;
+  // padding-top: 94px; для Desctop
+  padding: 60px 0 60px 0;
 
-    &__text {
-        color: var(--primary-text-color);
-        font-size: 14px;
-        line-height: 1.71;
-        letter-spacing: 0.42px;
-        margin-top: 10px;
-    }
+  &__text {
+    color: var(--primary-text-color);
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.42px;
+    margin-top: 10px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0;
+  }
 }
 
 .pec-list {
+  // text-align: center;
+  @media screen and (min-width: 768px) {
     display: flex;
+    flex-basis: calc(100% / 2 - 30px);
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: nowrap;
+  }
 }
 
 .peculiarities__item {
-    width: 270px;
+ 
 
-    &:not(:last-child) {
-        margin-right: 30px;
+//   &:not(:last-child) {
+//     margin-bottom: 30px;
+// }
+ 
+
+  @media screen and (min-width: 480px) {
+    width: 100%;
+    margin-bottom: 30px;
+    &:last-child {
+      margin-bottom: 0;
     }
+    
+     
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(50% - 30px);
+    // &:not(:last-child) {
+    //   margin-bottom: 30px;
+    // }
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+    margin-bottom: 0;
+    
+  }
 }
 
 .pec-item__icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 270px;
-    height: 120px;
-    border-radius: 4px;
-    background-color: #F5F4FA;
-    margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 120px;
+  border-radius: 4px;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
+
+  // @media screen and (min-width: 480px) {
+  //   width: 100%;
+  // }
+
+  // @media screen and (min-width:1200px) {
+  //   width: 270px;
+  // }
 }
 
 .pec__icon {
-    --color1: #212121;
-    --color2: #2196f3;
+  --color1: #212121;
+  --color2: #2196f3;
 }
-

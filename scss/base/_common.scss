@@ -1,43 +1,68 @@
 body {
-    color: var(--main-text-color);
-    font-family: var(--main-font-family);
-
+  color: var(--main-text-color);
+  font-family: var(--main-font-family);
 }
 
 .logo {
-    color: var(--accent-color);
-    font-family: var(--logo-font-family);
-    font-size: 26px;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.78px;
+  margin-right: auto;
+  color: var(--accent-color);
+  font-family: var(--logo-font-family);
+  font-size: 26px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.78px;
+  display: block;
+  padding: 16px 0px 16px 0px;
+  &__black {
+    color: #000;
+  }
 
-    &__black {
-        color: #000;
-    }
-    
-    &__white {
-        color: var(--primary-white-color);
-    
-    }
+  &__white {
+    color: var(--primary-white-color);
+  } 
+
+
+
+  @media screen and (min-width:768px) {
+    margin-right: 88px ;
+  }
+
+  @media screen and (min-width:1200px) {
+    padding: 0;
+    margin-right: 93px;
+  }
 }
 
-
-
 .secondary-title {
-    text-align: center;
+  text-align: center;
+  // font-size: 36px;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.08px;
+  @media screen and (min-width: 480px) {
+    font-size: 28px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 28px;
+    letter-spacing: 0.84px;
+  }
+
+  @media screen and (min-width: 1200px) {
     font-size: 36px;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 1.08px;
+  }
 }
 
 .third-title {
-    font-size: 14px;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.42px;
-    text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+  text-align: center;
+
+  @media screen and (min-width:1200px) {
+    text-align: left;
+  }
 }
-
-

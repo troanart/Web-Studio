@@ -1,23 +1,22 @@
 // utils
-
-@import './utils/variables'; 
+@import './utils/mixin';
+@import './utils/variables';
 @import './utils/visually-hidden';
 
-
-// base 
+// base
 
 @import './base/common';
 @import './base/reset';
 @import './base/container';
 
-
-// components 
+// components
 
 @import './components/socials';
 @import './components/modal-form';
 @import './components/filter';
 @import './components/overlay';
 @import './components/subscribe-form';
+@import './components/menu';
 
 // layouts
 
@@ -29,7 +28,3 @@
 @import './layouts/clients';
 @import './layouts/portfolio';
 @import './layouts/footer';
-
-
-
-
