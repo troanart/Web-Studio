@@ -19,7 +19,6 @@
   // text-align: center;
   @media screen and (min-width: 768px) {
     display: flex;
-    flex-basis: calc(100% / 2 - 30px);
     flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
@@ -37,10 +36,12 @@
 //   &:not(:last-child) {
 //     margin-bottom: 30px;
 // }
- 
+  @media screen and (max-width:399px) {
+    margin-bottom: 30px;
+  }
 
   @media screen and (min-width: 480px) {
-    width: 100%;
+    width: 450px;
     margin-bottom: 30px;
     &:last-child {
       margin-bottom: 0;
@@ -50,10 +51,8 @@
   }
 
   @media screen and (min-width: 768px) {
-    flex-basis: calc(50% - 30px);
-    // &:not(:last-child) {
-    //   margin-bottom: 30px;
-    // }
+    flex-basis: calc(100% / 2 - 30px);
+    width: 354px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -73,13 +72,17 @@
   background-color: #f5f4fa;
   margin-bottom: 30px;
 
-  // @media screen and (min-width: 480px) {
-  //   width: 100%;
-  // }
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
 
-  // @media screen and (min-width:1200px) {
-  //   width: 270px;
-  // }
+  @media screen and (min-width:768px) {
+    width: 354px;
+  }
+
+  @media screen and (min-width:1200px) {
+    width: 270px;
+  }
 }
 
 .pec__icon {

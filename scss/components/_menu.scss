@@ -42,6 +42,7 @@
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.8px;
+    transition: color var(--primary-translate);
 
     &:hover,
     &:focus {
@@ -62,7 +63,7 @@
 .no-active {
   color: var(--primary-text-color) ;
   font-family: 'Roboto';
-  font-size: 24px !important;
+  font-size: 20px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -75,16 +76,25 @@
     &:focus {
         color: var(--accent-color);
     }
+
+  @media screen and (min-width:480px) {
+    font-size: 24px;
+  }
 }
 
 .contact__link {
   color: var(--accent-color);
   font-family: 'Roboto';
-  font-size: 34px;
+  font-size: 26px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.68px;
+
+  @media screen and (min-width:480px) {
+    font-size: 34px;
+  }
+   
 
   
 }
@@ -92,11 +102,15 @@
 .link-social {
   color: var(--accent-color);
   font-family: 'Roboto';
-  font-size: 18px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 500;
   line-height: 1.22; 
   letter-spacing: 0.36px;
+
+  @media screen and (min-width:480px) {
+    font-size: 18px;
+  }
 }
 
 .menu-toggle {
@@ -124,6 +138,18 @@
   top: 16px;
   right: 16px;
   // color: #fff;
+}
+
+.actv {
+  color: var(--accent-color);
+}
+
+.close-svg {
+  transition: fill var(--primary-translate);
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
 }
 
 // .mobile-menu {

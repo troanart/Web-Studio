@@ -1,16 +1,19 @@
 .hero {
-  
+  background-color: #2F303A;
   margin: 0 auto;
   background-repeat: no-repeat;
   background-position: center ;
-  max-width: 1200px;
+  background-size: cover;
+  max-width: 1600px;
+  // padding-top: 200px;
+  // padding-bottom: 200px;
 
   background-image:
       linear-gradient(rgba(47, 48, 58, 0.40),
-          rgba(47, 48, 58, 0.40)), url(../images/retina/2-mobile-img.jpg);
+          rgba(47, 48, 58, 0.40)), url(../images/bg-hero.png);
   padding-top: 118px;
   padding-bottom: 118px;
-  max-width: 480px;
+  // max-width: 480px;
   height: 400px;
 
   @include mq(retina) {
@@ -25,13 +28,13 @@
       background-image:
           linear-gradient(rgba(47, 48, 58, 0.40),
               rgba(47, 48, 58, 0.40)), url(../images/retina/2-mobile-img.jpg);
-      max-width: 767px;
+      // max-width: 767px;
 
       @include mq(retina) {
           background-image: linear-gradient(rgba(47, 48, 58, 0.40),
                   rgba(47, 48, 58, 0.40)),
               url(../images/retina/2-mobile-img@2x.jpg);
-          max-width: 767px;
+          // max-width: 767px;
       }
 
       padding-top: 118px;
